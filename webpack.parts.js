@@ -5,7 +5,7 @@ const BabiliPlugin = require('babili-webpack-plugin')
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
-const publicPath = '/'
+const publicPath = './'
 
 exports.publicPath = publicPath
 
@@ -142,7 +142,7 @@ exports.extractCSS = ({ include, exclude, use } = {}) => {
     module: {
       rules: [
         {
-          test: /\.scss$/,
+            test: /\.(sass|scss)$/,
 
           include,
           exclude,
