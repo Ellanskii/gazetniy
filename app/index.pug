@@ -41,10 +41,6 @@ html.has-navbar-fixed-top
     //Color the status bar on mobile devices
     meta(name="theme-color", content=statusBarColor)
 
-    //jQuery
-    if jQueryCDN
-      script(defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
-
     //Fontawesome
     if fontawesomeCDN
       script(defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js")
@@ -65,7 +61,9 @@ html.has-navbar-fixed-top
     include includes/footer.pug
 
 
-
+//jQuery
+if jQueryCDN
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
     script.
         document.addEventListener('DOMContentLoaded', function () {
 
