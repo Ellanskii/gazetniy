@@ -1,7 +1,9 @@
 {
   "images\\map.png": "images/map.c2d041b7.png",
   "images\\overview.jpg": "images/overview.0edc8567.jpg",
-  "main.css": "styles/main.198680b9.css",
-  "main.js": "scripts/main.db8bb224.js",
-  "manifest.js": "scripts/manifest.62a2104d.js"
+  "images\\slide1.jpg": "images/slide1.43c5f450.jpg",
+  "main.css": "styles/main.d734aa32.css",
+  "main.js": "scripts/main.cee71d60.js",
+  "manifest.js": "scripts/manifest.989066c3.js",
+  "vendor.js": "scripts/vendor.7453e6c3.js"
 }
