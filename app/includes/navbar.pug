@@ -1,0 +1,21 @@
+nav.navbar.is-primary.is-fixed-top: .container
+    .navbar-brand
+        a.navbar-item(href='/')
+            img(src="./images/footer_logo.png", alt='', width='64', height='28px')
+        a.navbar-item(href='/')
+            img.round(src="./images/russian.jpg", alt='Русский')
+            span &nbsp;RU
+        a.navbar-item(href='/en')
+            img.round(src="./images/union-jack.jpg", alt='English')
+            span &nbsp;ENG
+        .navbar-burger.burger(data-target='navMenuColorprimary-example')
+            span
+            span
+            span
+    #navMenuColorprimary-example.navbar-menu
+        .navbar-start
+        .navbar-end
+            a.navbar-item(href='#overview') О проекте
+            a.navbar-item(href='#place') Расположение
+            a.navbar-item(href='#architecture') Архитектура
+            a.navbar-item(href='#contacts') Контакты

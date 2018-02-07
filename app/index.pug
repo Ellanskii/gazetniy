@@ -1,0 +1,172 @@
+- var appName = "my app";
+- var title = "app title";
+- var description = "this is pug html5 boilerplate";
+- var statusBarColor = "maroon";
+- var metrikaId = 12345678;
+
+- var jQueryCDN = true;
+- var fontawesomeCDN = true;
+
+
+doctype html
+html.has-navbar-fixed-top
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="description", content=description)
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    title= title
+
+    //Disable tap highlight on IE
+    meta(name="msapplication-tap-highlight", content="no")
+
+    //Web Application Manifest
+    link(rel="manifest", href="manifest.json")
+
+    //Add to homescreen for Chrome on Android
+    meta(name="mobile-web-app-capable", content="yes")
+    meta(name="application-name", content=appName)
+    link(rel="icon", sizes="192x192", href="images/touch/chrome-touch-icon-192x192.png")
+
+    //Add to homescreen for Safari on iOS
+    meta(name="apple-mobile-web-app-capable", content="yes")
+    meta(name="apple-mobile-web-app-status-bar-style", content="black")
+    meta(name="apple-mobile-web-app-title", content=appName)
+    link(rel="apple-touch-icon", href="images/touch/apple-touch-icon.png")
+
+    //Tile icon for Win8 (144x144 + tile color)
+    meta(name="msapplication-TileImage", content="images/touch/ms-touch-icon-144x144-precomposed.png")
+    meta(name="msapplication-TileColor", content=statusBarColor)
+
+    //Color the status bar on mobile devices
+    meta(name="theme-color", content=statusBarColor)
+
+    //jQuery
+    if jQueryCDN
+      script(defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+
+    //Fontawesome
+    if fontawesomeCDN
+      script(defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js")
+
+    //if IE
+      script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js')
+  body
+    include includes/navbar.pug
+    main
+        .section.is-info
+            .container
+                h1.has-text-centered.is-uppercase.has-text-primary: span.has-angles.has-text-left.is-marginless
+                    p.title.is-marginless Loft
+                    p.title.is-1.has-text-weight-bold Gazetniy
+        include includes/overview.pug
+        include includes/place.pug
+        include includes/architecture.pug
+    include includes/footer.pug
+
+
+
+    script.
+        document.addEventListener('DOMContentLoaded', function () {
+
+            // Get all "navbar-burger" elements
+            var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+            // Check if there are any navbar burgers
+            if ($navbarBurgers.length > 0) {
+
+                // Add a click event on each of them
+                $navbarBurgers.forEach(function ($el) {
+                    $el.addEventListener('click', function () {
+
+                        // Get the target from the "data-target" attribute
+                        var target = $el.dataset.target;
+                        var $target = document.getElementById(target);
+
+                        // Toggle the class on both the "navbar-burger" and the "navbar-menu"
+                        $el.classList.toggle('is-active');
+                        $target.classList.toggle('is-active');
+
+                    });
+                });
+            }
+
+        });
+
+        // Select all links with hashes
+        $('a[href*="#"]')
+        // Remove links that don't actually link to anything
+            .not('[href="#"]')
+            .not('[href="#0"]')
+            .click(function (event) {
+                // On-page links
+                if (
+                    location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+                    &&
+                    location.hostname == this.hostname
+                ) {
+                    // Figure out element to scroll to
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    // Does a scroll target exist?
+                    if (target.length) {
+                        // Only prevent default if animation is actually gonna happen
+                        event.preventDefault();
+                        $('html, body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000, function () {
+                            // Callback after animation
+                            // Must change focus!
+                            var $target = $(target);
+                            $target.focus();
+                            if ($target.is(":focus")) { // Checking if the target was focused
+                                return false;
+                            } else {
+                                $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
+                                $target.focus(); // Set focus again
+                            }
+                            ;
+                        });
+                    }
+                }
+            });
+
+    // Yandex.Metrika counter
+    script.
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function () {
+                try {
+                    w.yaCounter!{JSON.stringify(metrikaId)} = new Ya.Metrika({
+                        id: !{JSON.stringify(metrikaId)},
+                        clickmap: true,
+                        trackLinks: true,
+                        accurateTrackBounce: true,
+                        webvisor: true,
+                        trackHash: true
+                    });
+                } catch (e) {
+                }
+            });
+
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () {
+                    n.parentNode.insertBefore(s, n);
+                };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else {
+                f();
+            }
+        })
+        (document, window, "yandex_metrika_callbacks"
+        )
+        ;
+    noscript
+      div: img(src="https://mc.yandex.ru/watch/" + metrikaId, style="position:absolute; left:-9999px;", alt="")
+
+

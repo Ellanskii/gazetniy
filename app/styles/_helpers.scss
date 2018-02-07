@@ -1,0 +1,22 @@
+.has-angles {
+  padding: 0.5rem 1rem;
+  background:
+    url("./../images/angle-left-top.svg") left top no-repeat,
+    url("./../images/angle-right-bottom.svg") right bottom no-repeat;
+  background-size: 30px;
+  margin-bottom: 2rem;
+  display: inline-block;
+}
+
+.section.is-info {
+  background: #F9EAC5;
+}
+
+.footer-logo {
+  width: 150px;
+  position: absolute;
+}
+
+.round {
+  border-radius: 100%;
+}
