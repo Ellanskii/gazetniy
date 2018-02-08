@@ -1,4 +1,5 @@
 .has-angles {
+  font-family: DINCondensedC;
   padding: 0.5rem 1rem;
   background:
     url("./../images/angle-left-top.svg") left top no-repeat,
@@ -25,7 +26,8 @@ header {
   background: #F9EAC5;
 }
 
-section, .section {
+section,
+.section {
   outline: none;
 }
 

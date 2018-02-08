@@ -1,4 +1,7 @@
 {
+  "fonts\\DINCondensedC.eot": "fonts/DINCondensedC.445e1539.eot",
+  "fonts\\DINCondensedC.ttf": "fonts/DINCondensedC.3c396abe.ttf",
+  "fonts\\DINCondensedC.woff": "fonts/DINCondensedC.2782be57.woff",
   "fonts\\slick.eot": "fonts/slick.ced611da.eot",
   "fonts\\slick.ttf": "fonts/slick.d41f55a7.ttf",
   "fonts\\slick.woff": "fonts/slick.b7c9e1e4.woff",
@@ -7,7 +10,7 @@
   "images\\slide1.jpg": "images/slide1.ac8fb85e.jpg",
   "images\\slide2.jpg": "images/slide2.c3318d36.jpg",
   "images\\slide3.jpg": "images/slide3.18ee9bbf.jpg",
-  "main.css": "styles/main.c3cb63c5.css",
+  "main.css": "styles/main.05d75e70.css",
   "main.js": "scripts/main.8938d3d4.js",
   "manifest.js": "scripts/manifest.8b8f4e25.js",
   "vendor.js": "scripts/vendor.7453e6c3.js"
