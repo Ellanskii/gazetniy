@@ -1,13 +1,13 @@
 //
    Created by MI on 07.02.2018.
--var slides = []
--slides.push("https://placeholdit.co//i/1200x800?","")
--slides.push("https://placeholdit.co//i/1200x800?","")
--slides.push("https://placeholdit.co//i/1200x800?","")
+-var slides = [];
+-slides.push(["./images/slides/slide1.jpg",""]);
+-slides.push(["./images/slides/slide2.jpg",""]);
+-slides.push(["./images/slides/slide3.jpg",""]);
 
 header#slider
-    figure.image
-        img(src="./images/slide1.jpg", alt="")
-    figure.image
-        img(src="./images/slide1.jpg", alt="")
+    for slide in slides
+        figure.image
+            img(src= slide[0], alt= slide[1])
+
 

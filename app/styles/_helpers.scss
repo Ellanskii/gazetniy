@@ -24,3 +24,13 @@
 header {
   background: #F9EAC5;
 }
+
+section, .section {
+  outline: none;
+}
+
+@media all and (max-width: 769px) {
+  .title.is-2 {
+    font-size: 1.5rem;
+  }
+}
