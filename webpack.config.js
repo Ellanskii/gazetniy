@@ -28,7 +28,7 @@ const lintJSOptions = {
 
 const PATHS = {
   app: path.join(__dirname, 'app'),
-  build: path.join(__dirname, 'build')
+  build: path.join(__dirname, 'docs')
 }
 
 const lintStylesOptions = {
