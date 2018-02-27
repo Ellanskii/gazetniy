@@ -1,7 +1,9 @@
-- var appName = "my app";
-- var title = "app title";
-- var description = "this is pug html5 boilerplate";
-- var statusBarColor = "maroon";
+- var lang = "ru";
+- var appName = "Лофт Газетный";
+- var title = "Лофт Газетный - современный офис в сердце столицы. Аренда, Продажа офиса.";
+- var description = "Аренда и продажа офиса в центре Москвы.";
+- var keywords = "аренда офиса, элитный офис в москве, офис в центре москвы, аренда, продажа продажа офиса в центре москвы";
+- var statusBarColor = "#3E2A16";
 - var metrikaId = 12345678;
 
 - var jQueryCDN = true;
@@ -9,11 +11,12 @@
 
 
 doctype html
-html.has-navbar-fixed-top
+html.has-navbar-fixed-top(lang= lang)
   head
     meta(charset="utf-8")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
     meta(name="description", content=description)
+    meta(name="keywords", content=keywords)
     meta(name="viewport", content="width=device-width, initial-scale=1")
     title= title
 
@@ -53,9 +56,9 @@ html.has-navbar-fixed-top
     main
         .section.is-info
             .container
-                h1.has-text-centered.is-uppercase.has-text-primary: span.has-angles.has-text-left.is-marginless
-                    span.is-block.title.is-marginless Loft
-                    span.is-block.title.is-1.has-text-weight-bold Gazetniy
+                h1.has-text-centered.is-uppercase: span.has-angles.has-text-left.is-marginless
+                    span.is-block.title.is-marginless.has-text-primary Loft
+                    span.is-block.title.is-1.has-text-weight-bold.has-text-primary Gazetniy
         include includes/overview.pug
         include includes/place.pug
         include includes/architecture.pug

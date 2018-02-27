@@ -38,6 +38,14 @@ const lintStylesOptions = {
   // fix: true,
 }
 
+// const loadPugOptions = {
+//   query: {
+//     data: {
+//       lang: 'ru'
+//     }
+//   }
+// }
+
 const cssPreprocessorLoader = { loader: 'fast-sass-loader' }
 
 const commonConfig = merge([
