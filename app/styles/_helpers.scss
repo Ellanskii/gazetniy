@@ -7,15 +7,36 @@
   background-size: 30px;
   margin-bottom: 2rem;
   display: inline-block;
+
+  &.has-text-info {
+    background:
+      url("./../images/angle-left-top-light.svg") left top no-repeat,
+      url("./../images/angle-right-bottom-light.svg") right bottom no-repeat;
+    background-size: 30px;
+  }
 }
 
 .section.is-info {
   background: #F9EAC5;
 }
 
+.logo-section {
+  padding: 1rem 1.5rem;
+}
+
+.modal-content.box.is-info {
+  background: #F9EAC5;
+  width: 420px;
+}
+
 .footer-logo {
   width: 150px;
   position: absolute;
+}
+
+.callback-button {
+  position: absolute;
+  right: 0;
 }
 
 .round {

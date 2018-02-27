@@ -1,0 +1,21 @@
+//
+   Created by MI on 27.02.2018.
+.title.is-marginless.is-2.has-text-centered.is-uppercase.callback-button(onclick="$('#callback').addClass('is-active')"): a(href="javascript:void(0);").has-angles.has-text-info Позвоните мне
+.modal#callback
+    .modal-background(onclick="$('#callback').removeClass('is-active')")
+    .modal-content.box.is-info
+        p.title.has-text-centered
+            span.has-angles.has-text-primary Оставьте свой номер, и мы Вам перезвоним
+        form(action='/mailer.php' method="post")
+            .field
+                label.label Как Вас зовут?
+                .control
+                    input.input(type="text" name="name" placeholder="Антон")
+            .field
+                label.label Куда Вам перезвонить?
+                .control
+                    input.input(type="tel" name="phone" placeholder="Номер в любом формате")
+            .field
+                .control
+                    button.button.is-primary.is-large.is-fullwidth(type="submit") Перезвоните мне!
+    button.modal-close.is-large(aria-label='close', onclick="$('#callback').removeClass('is-active')")

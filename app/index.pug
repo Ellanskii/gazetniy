@@ -54,7 +54,7 @@ html.has-navbar-fixed-top(lang= lang)
     include includes/navbar.pug
     include includes/slider.pug
     main
-        .section.is-info
+        .section.is-info.logo-section
             .container
                 h1.has-text-centered.is-uppercase: span.has-angles.has-text-left.is-marginless
                     span.is-block.title.is-marginless.has-text-primary Loft
@@ -63,6 +63,7 @@ html.has-navbar-fixed-top(lang= lang)
         include includes/place.pug
         include includes/architecture.pug
     include includes/footer.pug
+        include includes/callback.pug
 
 
     //jQuery

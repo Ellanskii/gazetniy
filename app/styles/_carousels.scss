@@ -1,18 +1,18 @@
-.slick-arrow {
-  /* position: absolute; */
-  height: 100%;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
+//.slick-arrow {
+//  /* position: absolute; */
+//  height: 100%;
+//  background: none;
+//  border: none;
+//  cursor: pointer;
+//}
 
 #slider {
-  figure {
-    max-height: calc(100vh - 200px);
+  //height: calc(100vh - 138px - 3rem);
 
-    img {
-      object-fit: cover;
-    }
+  img {
+    width: 100%;
+    height: calc(100vh - 195px);
+    object-fit: cover;
   }
 }
 
