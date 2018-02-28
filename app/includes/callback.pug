@@ -1,8 +1,8 @@
 //
    Created by MI on 27.02.2018.
-.title.is-marginless.is-2.has-text-centered.is-uppercase.callback-button(onclick="$('#callback').addClass('is-active')"): a(href="javascript:void(0);").has-angles.has-text-info Позвоните мне
+.title.is-marginless.is-2.has-text-centered.is-uppercase.callback-button.js-modal-open: a(href="javascript:void(0);").has-angles.has-text-info Позвоните мне
 .modal#callback
-    .modal-background(onclick="$('#callback').removeClass('is-active')")
+    .modal-background.js-modal-close
     .modal-content.box.is-info
         p.title.has-text-centered
             span.has-angles.has-text-primary Оставьте свой номер, и мы Вам перезвоним
@@ -18,4 +18,4 @@
             .field
                 .control
                     button.button.is-primary.is-large.is-fullwidth(type="submit") Перезвоните мне!
-    button.modal-close.is-large(aria-label='close', onclick="$('#callback').removeClass('is-active')")
+    button.modal-close.is-large.js-modal-close

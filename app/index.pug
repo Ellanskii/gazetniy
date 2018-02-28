@@ -6,7 +6,7 @@
 - var statusBarColor = "#3E2A16";
 - var metrikaId = 12345678;
 
-- var jQueryCDN = true;
+- var jQueryCDN = false;
 - var fontawesomeCDN = true;
 
 
@@ -57,119 +57,14 @@ html.has-navbar-fixed-top(lang= lang)
         .section.is-info.logo-section
             .container
                 h1.has-text-centered.is-uppercase: span.has-angles.has-text-left.is-marginless
-                    span.is-block.title.is-marginless.has-text-primary Loft
-                    span.is-block.title.is-1.has-text-weight-bold.has-text-primary Gazetniy
+                    span.is-block.title.is-marginless.has-text-primary.loft Loft
+                    span.is-block.title.has-text-weight-bold.has-text-primary.gazetniy Gazetniy
         include includes/overview.pug
         include includes/place.pug
         include includes/architecture.pug
     include includes/footer.pug
         include includes/callback.pug
-
-
-    //jQuery
-    if jQueryCDN
-        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
-        script.
-            document.addEventListener('DOMContentLoaded', function () {
-
-                // Get all "navbar-burger" elements
-                var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-
-                // Check if there are any navbar burgers
-                if ($navbarBurgers.length > 0) {
-
-                    // Add a click event on each of them
-                    $navbarBurgers.forEach(function ($el) {
-                        $el.addEventListener('click', function () {
-
-                            // Get the target from the "data-target" attribute
-                            var target = $el.dataset.target;
-                            var $target = document.getElementById(target);
-
-                            // Toggle the class on both the "navbar-burger" and the "navbar-menu"
-                            $el.classList.toggle('is-active');
-                            $target.classList.toggle('is-active');
-
-                        });
-                    });
-                }
-
-            });
-
-            // Select all links with hashes
-            $('a[href*="#"]')
-            // Remove links that don't actually link to anything
-                .not('[href="#"]')
-                .not('[href="#0"]')
-                .click(function (event) {
-                    // On-page links
-                    if (
-                        location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
-                        &&
-                        location.hostname == this.hostname
-                    ) {
-                        // Figure out element to scroll to
-                        var target = $(this.hash);
-                        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                        // Does a scroll target exist?
-                        if (target.length) {
-                            // Only prevent default if animation is actually gonna happen
-                            event.preventDefault();
-                            $('html, body').animate({
-                                scrollTop: target.offset().top
-                            }, 1000, function () {
-                                // Callback after animation
-                                // Must change focus!
-                                var $target = $(target);
-                                $target.focus();
-                                if ($target.is(":focus")) { // Checking if the target was focused
-                                    return false;
-                                } else {
-                                    $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
-                                    $target.focus(); // Set focus again
-                                }
-                                ;
-                            });
-                        }
-                    }
-                });
-
-        // Yandex.Metrika counter
-        script.
-            (function (d, w, c) {
-                (w[c] = w[c] || []).push(function () {
-                    try {
-                        w.yaCounter!{JSON.stringify(metrikaId)} = new Ya.Metrika({
-                            id: !{JSON.stringify(metrikaId)},
-                            clickmap: true,
-                            trackLinks: true,
-                            accurateTrackBounce: true,
-                            webvisor: true,
-                            trackHash: true
-                        });
-                    } catch (e) {
-                    }
-                });
-
-                var n = d.getElementsByTagName("script")[0],
-                    s = d.createElement("script"),
-                    f = function () {
-                        n.parentNode.insertBefore(s, n);
-                    };
-                s.type = "text/javascript";
-                s.async = true;
-                s.src = "https://mc.yandex.ru/metrika/watch.js";
-
-                if (w.opera == "[object Opera]") {
-                    d.addEventListener("DOMContentLoaded", f, false);
-                } else {
-                    f();
-                }
-            })
-            (document, window, "yandex_metrika_callbacks"
-            )
-            ;
-        noscript
-          div: img(src="https://mc.yandex.ru/watch/" + metrikaId, style="position:absolute; left:-9999px;", alt="")
+    noscript
+      div: img(src="https://mc.yandex.ru/watch/" + metrikaId, style="position:absolute; left:-9999px;", alt="")
 
 
