@@ -12,6 +12,7 @@ $('#slider').slick({
     autoplay: true,
     arrows: false,
 });
+
 $('#overview-slider').slick();
 
 document.addEventListener('DOMContentLoaded', function () {

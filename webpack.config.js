@@ -96,7 +96,7 @@ const productionConfig = merge([
       new webpack.HashedModuleIdsPlugin(),
       new ManifestPlugin(),
       new BundleAnalyzerPlugin(),
-      new CleanPlugin(PATHS.build)
+      //new CleanPlugin(PATHS.build)
     ]
   },
   parts.minifyJS(),

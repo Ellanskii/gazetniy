@@ -3,11 +3,13 @@
 footer.footer#contacts
     .container
         .title.is-2.has-text-centered.is-uppercase: span.has-angles.has-text-info Контакты
-        p.subtitle.is-4.has-text-centered.is-uppercase: a(href="tel:+79772954448").has-text-info +7 (977) 295-44-48
-        p.subtitle.is-4.has-text-centered.is-uppercase: a(href="mailto:sales@gazetnyiloft.ru").has-text-info sales@gazetnyiloft.ru
+        p.subtitle.is-5.has-text-centered.is-uppercase: a(href="tel:+79772954448").has-text-info +7 (977) 295-44-48
+        p.subtitle.is-5.has-text-centered.is-uppercase: a(href="mailto:sales@gazetnyiloft.ru").has-text-info sales@gazetnyiloft.ru
+        .title.has-text-centered.is-marginless.is-2.has-text-centered.is-uppercase.js-modal-open.is-hidden-tablet: a(href="javascript:void(0);").has-angles.has-text-info Позвоните мне
+        .has-text-centered: img.is-hidden-tablet(src="./images/footer_logo.png" alt="Лофт Газетный" width='150')
         p.is-small.has-text-centered.has-text-white ©&nbsp;«ЛОФТ ГАЗЕТНЫЙ»,&nbsp;
             script.
                 var mdate = new Date();
                 document.write(mdate.getFullYear());
-        img.footer-logo(src="./images/footer_logo.png" alt="Лофт Газетный" width='150')
+        img.footer-logo.is-hidden-mobile(src="./images/footer_logo.png" alt="Лофт Газетный" width='150')
 
