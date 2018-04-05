@@ -1,0 +1,156 @@
+<head><link href="./styles/main.a4df2497.css" rel="stylesheet"></head>Html Webpack Plugin:
+<pre>
+  Error: Child compilation failed:
+  Module build failed: Error: C:\Users\MI\Desktop\усатюк\Gazetniy\app\en.pug:67:  1
+      65|     include includes/en/footer.pug
+      66|         include includes/en/callback.pug
+    > 67|       script.
+  --------^
+      68|           <!-- Yandex.Metrika counter -->
+      69| 
+      70|           (function (d, w, c) {
+  Inconsistent indentation. Expecting either 4 or 8 spaces/tabs.
+  
+  - index.js:32 makeError
+    [Gazetniy]/[pug-error]/index.js:32:13
+  
+  - index.js:58 Lexer.error
+    [Gazetniy]/[pug-lexer]/index.js:58:15
+  
+  - index.js:1212 Lexer.indent
+    [Gazetniy]/[pug-lexer]/index.js:1212:18
+  
+  - index.js:1319 Lexer.callLexerFunction
+    [Gazetniy]/[pug-lexer]/index.js:1319:23
+  
+  - index.js:1358 Lexer.advance
+    [Gazetniy]/[pug-lexer]/index.js:1358:15
+  
+  - index.js:1319 Lexer.callLexerFunction
+    [Gazetniy]/[pug-lexer]/index.js:1319:23
+  
+  - index.js:1375 Lexer.getTokens
+    [Gazetniy]/[pug-lexer]/index.js:1375:12
+  
+  - index.js:12 lex
+    [Gazetniy]/[pug-lexer]/index.js:12:42
+  
+  - index.js:99 Object.lex
+    [Gazetniy]/[pug]/lib/index.js:99:27
+  
+  - index.js:44 Function.loadString [as string]
+    [Gazetniy]/[pug-load]/index.js:44:24
+  
+  - index.js:86 compileBody
+    [Gazetniy]/[pug]/lib/index.js:86:18
+  
+  - index.js:243 Object.exports.compile
+    [Gazetniy]/[pug]/lib/index.js:243:16
+  
+  
+  - Error: C:\Users\MI\Desktop\усатюк\Gazetniy\app\en.pug:67:1
+  
+  - 65|     include includes/en/footer.pug
+  
+  - 66|         include includes/en/callback.pug
+  
+  - > 67|       script.
+  
+  - --------^
+  
+  - 68|           <!-- Yandex.Metrika counter -->
+  
+  - 69|
+  
+  - 70|           (function (d, w, c) {
+  
+  - Inconsistent indentation. Expecting either 4 or 8 spaces/tabs.
+  
+  - compiler.js:76 
+    [Gazetniy]/[html-webpack-plugin]/lib/compiler.js:76:16
+  
+  - Compiler.js:300 compile
+    [Gazetniy]/[webpack]/lib/Compiler.js:300:11
+  
+  - Compiler.js:510 applyPluginsAsync.err
+    [Gazetniy]/[webpack]/lib/Compiler.js:510:14
+  
+  - Tapable.js:202 next
+    [Gazetniy]/[tapable]/lib/Tapable.js:202:11
+  
+  - CachePlugin.js:78 Compiler.<anonymous>
+    [Gazetniy]/[webpack]/lib/CachePlugin.js:78:5
+  
+  - Tapable.js:206 Compiler.applyPluginsAsyncSeries
+    [Gazetniy]/[tapable]/lib/Tapable.js:206:13
+  
+  - Compiler.js:507 compilation.seal.err
+    [Gazetniy]/[webpack]/lib/Compiler.js:507:11
+  
+  - Tapable.js:195 Compilation.applyPluginsAsyncSeries
+    [Gazetniy]/[tapable]/lib/Tapable.js:195:46
+  
+  - Compilation.js:680 self.applyPluginsAsync.err
+    [Gazetniy]/[webpack]/lib/Compilation.js:680:19
+  
+  - Tapable.js:202 next
+    [Gazetniy]/[tapable]/lib/Tapable.js:202:11
+  
+  - index.js:126 LastCallWebpackPlugin.process
+    [Gazetniy]/[last-call-webpack-plugin]/index.js:126:12
+  
+  - index.js:197 Compilation.<anonymous>
+    [Gazetniy]/[last-call-webpack-plugin]/index.js:197:12
+  
+  - Tapable.js:206 Compilation.applyPluginsAsyncSeries
+    [Gazetniy]/[tapable]/lib/Tapable.js:206:13
+  
+  - Compilation.js:671 self.applyPluginsAsync.err
+    [Gazetniy]/[webpack]/lib/Compilation.js:671:11
+  
+  - Tapable.js:202 next
+    [Gazetniy]/[tapable]/lib/Tapable.js:202:11
+  
+  - index.js:126 LastCallWebpackPlugin.process
+    [Gazetniy]/[last-call-webpack-plugin]/index.js:126:12
+  
+  - index.js:194 Compilation.<anonymous>
+    [Gazetniy]/[last-call-webpack-plugin]/index.js:194:12
+  
+  - Tapable.js:204 next
+    [Gazetniy]/[tapable]/lib/Tapable.js:204:14
+  
+  - index.js:106 Compilation.<anonymous>
+    [Gazetniy]/[babili-webpack-plugin]/lib/index.js:106:11
+  
+  - Tapable.js:206 Compilation.applyPluginsAsyncSeries
+    [Gazetniy]/[tapable]/lib/Tapable.js:206:13
+  
+  - Compilation.js:666 self.applyPluginsAsync.err
+    [Gazetniy]/[webpack]/lib/Compilation.js:666:10
+  
+  - Tapable.js:195 Compilation.applyPluginsAsyncSeries
+    [Gazetniy]/[tapable]/lib/Tapable.js:195:46
+  
+  - Compilation.js:662 sealPart2
+    [Gazetniy]/[webpack]/lib/Compilation.js:662:9
+  
+  - Tapable.js:195 Compilation.applyPluginsAsyncSeries
+    [Gazetniy]/[tapable]/lib/Tapable.js:195:46
+  
+  - Compilation.js:605 Compilation.seal
+    [Gazetniy]/[webpack]/lib/Compilation.js:605:8
+  
+  - Compiler.js:504 applyPluginsParallel.err
+    [Gazetniy]/[webpack]/lib/Compiler.js:504:17
+  
+  - Tapable.js:289 
+    [Gazetniy]/[tapable]/lib/Tapable.js:289:11
+  
+  - Compilation.js:507 _addModuleChain
+    [Gazetniy]/[webpack]/lib/Compilation.js:507:11
+  
+  - Compilation.js:477 processModuleDependencies.err
+    [Gazetniy]/[webpack]/lib/Compilation.js:477:14
+  
+</pre><script type="text/javascript" src="./scripts/manifest.dea7ebc5.js"></script><script type="text/javascript" src="./scripts/vendor.7453e6c3.js"></script><script type="text/javascript" src="./scripts/main.0c84d450.js"></script>

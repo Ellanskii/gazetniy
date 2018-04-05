@@ -6,16 +6,18 @@
     .modal-content.box.is-info
         p.title.has-text-centered
             span.has-angles.has-text-primary Оставьте свой номер, и мы Вам перезвоним
-        form(action='/mailer.php' method="post")
+        form#ajax-contact(action='/mailer.php' method="post")
             .field
                 label.label Как Вас зовут?
                 .control
-                    input.input(type="text" name="name" placeholder="Антон")
+                    input.input#name(type="text" name="name" placeholder="Антон")
             .field
                 label.label Куда Вам перезвонить?
                 .control
-                    input.input(type="tel" name="phone" placeholder="Номер в любом формате")
+                    input.input#phone(type="tel" name="phone" placeholder="Номер в любом формате")
             .field
                 .control
-                    button.button.is-primary.is-large.is-fullwidth(type="submit") Перезвоните мне!
+                    button.button.is-primary.is-large.is-fullwidth#submit-btn(type="submit") Перезвоните мне!
+            .field(style="display:none;")
+                .notification.is-success.is-error#form-messages
     button.modal-close.is-large.js-modal-close

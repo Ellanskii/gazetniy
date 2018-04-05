@@ -1,0 +1,23 @@
+//
+   Created by MI on 27.02.2018.
+.title.is-marginless.is-2.has-text-centered.is-uppercase.callback-button.js-modal-open.is-hidden-mobile: a(href="javascript:void(0);").has-angles.has-text-info Call me
+.modal#callback
+    .modal-background.js-modal-close
+    .modal-content.box.is-info
+        p.title.has-text-centered
+            span.has-angles.has-text-primary We'll call you
+        form#ajax-contact(action='/mailer.php' method="post")
+            .field
+                label.label Your name
+                .control
+                    input.input#name(type="text" name="name" placeholder="John Doe")
+            .field
+                label.label Your phone
+                .control
+                    input.input#phone(type="tel" name="phone" placeholder="Any format")
+            .field
+                .control
+                    button.button.is-primary.is-large.is-fullwidth#submit-btn(type="submit") Call me
+            .field(style="display:none;")
+                .notification.is-success.is-error#form-messages
+    button.modal-close.is-large.js-modal-close

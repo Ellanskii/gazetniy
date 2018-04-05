@@ -1,7 +1,7 @@
-- var lang = "ru";
+- var lang = "en";
 - var appName = "Лофт Газетный";
-- var title = "Лофт Газетный - современный офис в сердце столицы. Аренда, Продажа офиса.";
-- var description = "Аренда и продажа офиса в центре Москвы.";
+- var title = "Perfect office in the center of Moscow. Buy or rent office.";
+- var description = "Rent and sale of office in the center of Moscow.";
 - var keywords = "аренда офиса, элитный офис в москве, офис в центре москвы, аренда, продажа продажа офиса в центре москвы";
 - var statusBarColor = "#3E2A16";
 - var metrikaId = 48138485;
@@ -51,54 +51,56 @@ html.has-navbar-fixed-top(lang= lang)
     //if IE
       script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js')
   body
-    include includes/navbar.pug
-    include includes/slider.pug
+    include includes/en/navbar.pug
+    include includes/en/slider.pug
     main
         .section.is-info.logo-section
             .container
                 h1.has-text-centered.is-uppercase: span.has-angles.has-text-left.is-marginless
                     span.is-block.title.is-marginless.has-text-primary.loft Loft
                     span.is-block.title.has-text-weight-bold.has-text-primary.gazetniy Gazetnyi
-        include includes/overview.pug
-        include includes/place.pug
-        include includes/architecture.pug
-    include includes/footer.pug
-        include includes/callback.pug
+        include includes/en/overview.pug
+        include includes/en/place.pug
+        include includes/en/architecture.pug
+    include includes/en/footer.pug
+        include includes/en/callback.pug
+      script.
+          <!-- Yandex.Metrika counter -->
 
-    script.
-        <!-- Yandex.Metrika counter -->
+          (function (d, w, c) {
+              (w[c] = w[c] || []).push(function () {
+                  try {
+                      w.yaCounter48138485 = new Ya.Metrika({
+                          id: 48138485,
+                          clickmap: true,
+                          trackLinks: true,
+                          accurateTrackBounce: true,
+                          webvisor: true
+                      });
+                  } catch (e) {
+                  }
+              });
 
-            (function (d, w, c
-        ) {
-            (w[c] = w[c] || []).push(function () {
-                try {
-                    w.yaCounter48138485 = new Ya.Metrika({
-                        id: 48138485,
-                        clickmap: true,
-                        trackLinks: true,
-                        accurateTrackBounce: true,
-                        webvisor: true
-                    });
-                } catch (e) {
-                }
-            });
+              var n = d.getElementsByTagName("script")[0],
+                  s = d.createElement("script"),
+                  f = function () {
+                      n.parentNode.insertBefore(s, n);
+                  };
+              s.type = "text/javascript";
+              s.async = true;
+              s.src = "https://mc.yandex.ru/metrika/watch.js";
 
-            var n = d.getElementsByTagName("script")[0],
-            s = d.createElement("script"),
-            f = function () { n.parentNode.insertBefore(s, n); };
-            s.type = "text/javascript";
-            s.async = true;
-            s.src = "https://mc.yandex.ru/metrika/watch.js";
+              if (w.opera == "[object Opera]") {
+                  d.addEventListener("DOMContentLoaded", f, false);
+              } else {
+                  f();
+              }
+          })
+          (document, window, "yandex_metrika_callbacks"
+          )
+          ;
 
-            if (w.opera == "[object Opera]") {
-            d.addEventListener("DOMContentLoaded", f, false);
-        } else { f(); }
-        })
-        (document, window, "yandex_metrika_callbacks"
-        )
-        ;
-
-    noscript
+      noscript
       div: img(src="https://mc.yandex.ru/watch/" + metrikaId, style="position:absolute; left:-9999px;", alt="")
 
 

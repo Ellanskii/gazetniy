@@ -88,7 +88,53 @@ $('a[href*="#"]')
     });
 
 
+$(function() {
+    // Get the form.
+    var form = $('#ajax-contact');
 
+    // Get the messages div.
+    var formMessages = $('#form-messages');
+
+    // Set up an event listener for the contact form.
+    $(form).submit(function(event) {
+        // Stop the browser from submitting the form.
+        event.preventDefault();
+
+        var formData = $(form).serialize();
+
+        $("#submit-btn").addClass('is-loading');
+
+        $.ajax({
+            type: 'POST',
+            url: $(form).attr('action'),
+            data: formData
+        }).done(function(response) {
+            // Make sure that the formMessages div has the 'success' class.
+            $(formMessages).removeClass('is-error');
+            $(formMessages).addClass('is-success');
+
+            // Set the message text.
+            $(formMessages).text("Мы скоро Вам перезвоним!").parent().show();
+
+            $("#submit-btn").removeClass('is-loading');
+
+            // Clear the form.
+            $('#name').val('');
+            $('#phone').val('');
+        }).fail(function(data) {
+            // Make sure that the formMessages div has the 'error' class.
+            $(formMessages).removeClass('is-success');
+            $(formMessages).addClass('is-error');
+
+            $("#submit-btn").removeClass('is-loading');
+
+            // Set the message text.
+
+            $(formMessages).text('Что-то пошло не так. Попробуйте ещё раз!');
+
+        });
+    });
+});
 
 
 

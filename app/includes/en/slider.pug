@@ -1,0 +1,15 @@
+//
+   Created by MI on 07.02.2018.
+-var slides = [];
+-slides.push(["./images/slides/slide1.jpg", "./images/slide1-desktop.jpg", ""]);
+-slides.push(["./images/slides/slide2.jpg", "./images/slide2-desktop.jpg", ""]);
+-slides.push(["./images/slides/slide3.jpg", "./images/slide3-desktop.jpg", ""]);
+-slides.push(["./images/slides/slide4.jpg", "./images/slide4-desktop.jpg", ""]);
+
+header#slider
+    for slide in slides
+        picture
+            source(srcset!= slide[1] media="(min-width: 1024px)")
+            img(src= slide[0], alt= slide[2])
+
+

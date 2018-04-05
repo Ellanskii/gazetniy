@@ -64,6 +64,10 @@ const commonConfig = merge([
       new HtmlPlugin({
         template: './index.pug'
       }),
+      new HtmlPlugin({
+        template: './en.pug',
+        filename: 'en.html'
+      }),
       new FriendlyErrorsPlugin(),
       new StylelintPlugin(lintStylesOptions)
     ],
@@ -129,7 +133,10 @@ const productionConfig = merge([
   }),
   parts.purifyCSS({
     paths: glob.sync(`${PATHS.app}/**/*.+(pug|js)`, { nodir: true }),
-    styleExtensions: ['.css', '.scss']
+    styleExtensions: ['.css', '.scss', '.sass'],
+    purifyOptions: {
+      //whitelist: ['notification', 'is-success', 'is-error']
+    }
   }),
   parts.minifyCSS({
     options: {
