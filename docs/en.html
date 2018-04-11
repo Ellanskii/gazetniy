@@ -1,156 +1,36 @@
-<head><link href="./styles/main.a4df2497.css" rel="stylesheet"></head>Html Webpack Plugin:
-<pre>
-  Error: Child compilation failed:
-  Module build failed: Error: C:\Users\MI\Desktop\усатюк\Gazetniy\app\en.pug:67:  1
-      65|     include includes/en/footer.pug
-      66|         include includes/en/callback.pug
-    > 67|       script.
-  --------^
-      68|           <!-- Yandex.Metrika counter -->
-      69| 
-      70|           (function (d, w, c) {
-  Inconsistent indentation. Expecting either 4 or 8 spaces/tabs.
-  
-  - index.js:32 makeError
-    [Gazetniy]/[pug-error]/index.js:32:13
-  
-  - index.js:58 Lexer.error
-    [Gazetniy]/[pug-lexer]/index.js:58:15
-  
-  - index.js:1212 Lexer.indent
-    [Gazetniy]/[pug-lexer]/index.js:1212:18
-  
-  - index.js:1319 Lexer.callLexerFunction
-    [Gazetniy]/[pug-lexer]/index.js:1319:23
-  
-  - index.js:1358 Lexer.advance
-    [Gazetniy]/[pug-lexer]/index.js:1358:15
-  
-  - index.js:1319 Lexer.callLexerFunction
-    [Gazetniy]/[pug-lexer]/index.js:1319:23
-  
-  - index.js:1375 Lexer.getTokens
-    [Gazetniy]/[pug-lexer]/index.js:1375:12
-  
-  - index.js:12 lex
-    [Gazetniy]/[pug-lexer]/index.js:12:42
-  
-  - index.js:99 Object.lex
-    [Gazetniy]/[pug]/lib/index.js:99:27
-  
-  - index.js:44 Function.loadString [as string]
-    [Gazetniy]/[pug-load]/index.js:44:24
-  
-  - index.js:86 compileBody
-    [Gazetniy]/[pug]/lib/index.js:86:18
-  
-  - index.js:243 Object.exports.compile
-    [Gazetniy]/[pug]/lib/index.js:243:16
-  
-  
-  - Error: C:\Users\MI\Desktop\усатюк\Gazetniy\app\en.pug:67:1
-  
-  - 65|     include includes/en/footer.pug
-  
-  - 66|         include includes/en/callback.pug
-  
-  - > 67|       script.
-  
-  - --------^
-  
-  - 68|           <!-- Yandex.Metrika counter -->
-  
-  - 69|
-  
-  - 70|           (function (d, w, c) {
-  
-  - Inconsistent indentation. Expecting either 4 or 8 spaces/tabs.
-  
-  - compiler.js:76 
-    [Gazetniy]/[html-webpack-plugin]/lib/compiler.js:76:16
-  
-  - Compiler.js:300 compile
-    [Gazetniy]/[webpack]/lib/Compiler.js:300:11
-  
-  - Compiler.js:510 applyPluginsAsync.err
-    [Gazetniy]/[webpack]/lib/Compiler.js:510:14
-  
-  - Tapable.js:202 next
-    [Gazetniy]/[tapable]/lib/Tapable.js:202:11
-  
-  - CachePlugin.js:78 Compiler.<anonymous>
-    [Gazetniy]/[webpack]/lib/CachePlugin.js:78:5
-  
-  - Tapable.js:206 Compiler.applyPluginsAsyncSeries
-    [Gazetniy]/[tapable]/lib/Tapable.js:206:13
-  
-  - Compiler.js:507 compilation.seal.err
-    [Gazetniy]/[webpack]/lib/Compiler.js:507:11
-  
-  - Tapable.js:195 Compilation.applyPluginsAsyncSeries
-    [Gazetniy]/[tapable]/lib/Tapable.js:195:46
-  
-  - Compilation.js:680 self.applyPluginsAsync.err
-    [Gazetniy]/[webpack]/lib/Compilation.js:680:19
-  
-  - Tapable.js:202 next
-    [Gazetniy]/[tapable]/lib/Tapable.js:202:11
-  
-  - index.js:126 LastCallWebpackPlugin.process
-    [Gazetniy]/[last-call-webpack-plugin]/index.js:126:12
-  
-  - index.js:197 Compilation.<anonymous>
-    [Gazetniy]/[last-call-webpack-plugin]/index.js:197:12
-  
-  - Tapable.js:206 Compilation.applyPluginsAsyncSeries
-    [Gazetniy]/[tapable]/lib/Tapable.js:206:13
-  
-  - Compilation.js:671 self.applyPluginsAsync.err
-    [Gazetniy]/[webpack]/lib/Compilation.js:671:11
-  
-  - Tapable.js:202 next
-    [Gazetniy]/[tapable]/lib/Tapable.js:202:11
-  
-  - index.js:126 LastCallWebpackPlugin.process
-    [Gazetniy]/[last-call-webpack-plugin]/index.js:126:12
-  
-  - index.js:194 Compilation.<anonymous>
-    [Gazetniy]/[last-call-webpack-plugin]/index.js:194:12
-  
-  - Tapable.js:204 next
-    [Gazetniy]/[tapable]/lib/Tapable.js:204:14
-  
-  - index.js:106 Compilation.<anonymous>
-    [Gazetniy]/[babili-webpack-plugin]/lib/index.js:106:11
-  
-  - Tapable.js:206 Compilation.applyPluginsAsyncSeries
-    [Gazetniy]/[tapable]/lib/Tapable.js:206:13
-  
-  - Compilation.js:666 self.applyPluginsAsync.err
-    [Gazetniy]/[webpack]/lib/Compilation.js:666:10
-  
-  - Tapable.js:195 Compilation.applyPluginsAsyncSeries
-    [Gazetniy]/[tapable]/lib/Tapable.js:195:46
-  
-  - Compilation.js:662 sealPart2
-    [Gazetniy]/[webpack]/lib/Compilation.js:662:9
-  
-  - Tapable.js:195 Compilation.applyPluginsAsyncSeries
-    [Gazetniy]/[tapable]/lib/Tapable.js:195:46
-  
-  - Compilation.js:605 Compilation.seal
-    [Gazetniy]/[webpack]/lib/Compilation.js:605:8
-  
-  - Compiler.js:504 applyPluginsParallel.err
-    [Gazetniy]/[webpack]/lib/Compiler.js:504:17
-  
-  - Tapable.js:289 
-    [Gazetniy]/[tapable]/lib/Tapable.js:289:11
-  
-  - Compilation.js:507 _addModuleChain
-    [Gazetniy]/[webpack]/lib/Compilation.js:507:11
-  
-  - Compilation.js:477 processModuleDependencies.err
-    [Gazetniy]/[webpack]/lib/Compilation.js:477:14
-  
-</pre><script type="text/javascript" src="./scripts/manifest.dea7ebc5.js"></script><script type="text/javascript" src="./scripts/vendor.7453e6c3.js"></script><script type="text/javascript" src="./scripts/main.0c84d450.js"></script>
+<!DOCTYPE html><html class="has-navbar-fixed-top" lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="description" content="Rent and sale of office in the center of Moscow."><meta name="keywords" content="аренда офиса, элитный офис в москве, офис в центре москвы, аренда, продажа продажа офиса в центре москвы"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Perfect office in the center of Moscow. Buy or rent office.</title><!--Disable tap highlight on IE--><meta name="msapplication-tap-highlight" content="no"><!--Web Application Manifest--><link rel="manifest" href="manifest.json"><!--Add to homescreen for Chrome on Android--><meta name="mobile-web-app-capable" content="yes"><meta name="application-name" content="Лофт Газетный"><link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png"><!--Add to homescreen for Safari on iOS--><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><meta name="apple-mobile-web-app-title" content="Лофт Газетный"><link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png"><!--Tile icon for Win8 (144x144 + tile color)--><meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png"><meta name="msapplication-TileColor" content="#3E2A16"><!--Color the status bar on mobile devices--><meta name="theme-color" content="#3E2A16"><!--Fontawesome--><script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script><!--if IEscript(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js')--><link href="./styles/main.a4df2497.css" rel="stylesheet"></head><body><nav class="navbar is-primary is-fixed-top"><div class="container"><div class="navbar-brand"><a class="navbar-item" href="/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAABDCAMAAABJLAxMAAAANlBMVEVMaXG+ppG+ppG+ppG+ppG+ppG+ppG+ppG+ppG+ppG+ppG+ppG+ppG+ppG+ppG+ppG+ppG+ppHDyLWAAAAAEXRSTlMAAd4IHl9EVJjMuBF47qgwh6aGvvcAAARFSURBVGje7ZrplqsgDIBRWZVF3v9lr4Q1OrbSzpl6z2n+WBbhM4QkMEM8knkg9xBEpRZyGyzJilByHyxGbihfrPewpuE2WGy0sTjo0RsbNuQ6gvD0HMUHsLRXsaijo9gUZqPPEOn5x2uNsejmUcUKddYr8BmcsdHPf+08MBb3fpteeRmwbO6j/PoZ28pYzBuSiO6HJW+ApegdseaFnGEZpZT8ENZETrHAVXwIi5xjKa21uB/WJ23rv8AS3ky38FsYy21BkCwmYNwDy6vgDga1/TDeu9tgBbHEmfDU5B5YLh4xOCELW7WDqB1KUThz5Cv/gSxC21nuV4sLISguVglxa0A1bt8F3h5SUxmCp275sOxigbZ1MYVnJuXGEtWPoaaJ6+gMHngnVGP3XYK/IUN4jkMdYgweO+2sMHmYZfOXItTxlmqt45hGO0uJ1m9j5fkSloMbD5KdJXz8AYudXI9wqJh+BcsiLNCQX6p34kes4ESDnlQZKUlUYrU3mQ5nMCYMeh0rMSSsyMKSW4xrvMcCpRg+kGltvqtoRx/dXOk2RXvMsq07CLTDr6lgMYRFyxDwayVHLFneAr2NRYvGY0z0Aq9YP15PldqEpRAW6CjkBdGC3A9YNvdIus2bkcbxxkNGa8rW6sCKxlCwWLaXOSPvseY6N2uNKe+E/WUcq0vbg7WiuZbUZyqD7bFUdQPCbMLbtdpt2mJytBsLFqSqANZoiDDLEywkod7mz6xCG5/Tg1WWbCQNhSyDXcQKUxpWEZDb4C9gWYQFFrrCthI9WMFvzC6qug0JYxNLurDCWjV2HPQ0urrdLmLp8jUogAvfrOtlrDlZdoPlcr0lPVgW1Kv2d1uNwSesOV1UuwdYMvmBBisGoIpygkVlElfTBwqqlicGvws+8hFWcj0NVk7Vs0GcYHGP6Gm0KrZTpUZh8zoWWLhEWLTxZ5exRNSKww41J0fdWKB2M7VYRKFU4BrWGj8EbJ7jsL4iJwJXO0H0Qyz4PoGwWL6ofWZbc23Ktq5QEmFxqnN5J8qo5xlhUfSNj4JPaSqeQbZJxD5f7cCKVqkOWLoLC3Q+JE0Xh8p2d+E9WDQbyTtY7JAg53ysGnwfVslc38Gy+9y3PQ28hiVexmKlaURYa5PquFexJtONNRJ0Com23fxdtgZ9NbyKlRO4p1hTjXL1YAJN4J+0C2LLqYwdThx9WO4a1jLXpdE1HPCsNrpLpNUhhe7DSsH5CRYdfZOza7oIU7Dm6hZcfpnWc1Y8feUMgidxT7BScH6CteFUk2mEJ2dqm3OZPfgMc4iJ1c+eYdEeLNJeQSRFti/kgPE+VrTdq1jLXC9GVG6qm3VNJvULWKIHiwwpI1MuNPK0C6Zj/3ex4sn3KtbWQ+hVh503ULrhLHSTst1CYUrPKiT2bqRsUlQY2hIaGLWUaVqsG8kX64v1q0Lr/0XJ+2AtCnmam1ANuyvXf97fomhGIBH4AAAAAElFTkSuQmCC" alt="" width="64" height="28"></a><a class="navbar-item" href="/">RUS<!--img.round(src="./images/russian.jpg", alt='Русский')--><!--span &nbsp;RUS--></a><a class="navbar-item is-active" href="/en.html">ENG<!--img.round(src="./images/union-jack.jpg", alt='English')--><!--span &nbsp;ENG--></a><div class="navbar-burger burger" data-target="navMenuColorprimary-example"><span></span><span></span><span></span></div></div><div class="navbar-menu" id="navMenuColorprimary-example"><div class="navbar-start"></div><div class="navbar-end"><a class="navbar-item" href="#overview">About</a><a class="navbar-item" href="#place">Location</a><a class="navbar-item" href="#architecture">Architecture</a><a class="navbar-item" href="#contacts">Contacts</a></div></div></div></nav><!--Created by MI on 07.02.2018.--><header id="slider"><picture><source srcset="./images/slide1-desktop.jpg" media="(min-width: 1024px)"><img src="./images/slide1.ac8fb85e.jpg" alt=""></picture><picture><source srcset="./images/slide2-desktop.jpg" media="(min-width: 1024px)"><img src="./images/slide2.c3318d36.jpg" alt=""></picture><picture><source srcset="./images/slide3-desktop.jpg" media="(min-width: 1024px)"><img src="./images/slide3.18ee9bbf.jpg" alt=""></picture><picture><source srcset="./images/slide4-desktop.jpg" media="(min-width: 1024px)"><img src="./images/slide4.c23e53c3.jpg" alt=""></picture></header><main><div class="section is-info logo-section"><div class="container"><h1 class="has-text-centered is-uppercase"><span class="has-angles has-text-left is-marginless"><span class="is-block title is-marginless has-text-primary loft">Loft</span><span class="is-block title has-text-weight-bold has-text-primary gazetniy">Gazetnyi</span></span></h1></div></div><!--Created by MI on 07.02.2018.--><section class="section" id="overview"><div class="container"><h2 class="title is-2 has-text-centered is-uppercase has-text-primary"><span class="has-angles">About</span></h2><div class="columns is-centered"><div class="column is-12 is-8-desktop" id="overview-slider" style="margin: 0 2rem;"><div><div class="columns is-vcentered"><div class="column is-6"><figure class="image"><img src="./images/overview1.0edc8567.jpg" alt="Loft Gazetnyi"></figure></div><div class="column is-6"><h3 class="title is-5 is-uppercase">Overview</h3><p>For those who prefer privacy and same time – the most convenient location in the city. We’re ready to present exclusive office space with own and separate entrance, 2 working places reception desk, 11 ready-to-use working places. Office is equipped with all needed furniture for work and rest with kitchen and comfortable meeting room with widescreen LED TV.</p><p><a href="https://www.cian.ru/sale/flat/177005324/" target="_blank">It's possible ordering office and appartments in the same building<span class="icon"><i class="fas fa-external-link"></i></span></a></p></div></div></div><div><div class="columns is-vcentered"><div class="column is-6"><h3 class="title is-5 is-uppercase">For whom</h3><p>The location is perfectly meets the needs of representative offices for big multinational corporations, will emphasize high level for small companies working with demanding clients and also will be cozy and convenient space for small private and family offices.</p></div><div class="column is-6"><figure class="image"><img src="./images/overview2.c3318d36.jpg" alt="Loft Gazetnyi"></figure></div></div></div><div><div class="columns is-vcentered"><div class="column is-6"><figure class="image"><img src="./images/overview3.2ac75e5f.jpg" alt="Loft Gazetnyi"></figure></div><div class="column is-6"><h3 class="title is-5 is-uppercase">Design</h3><p>Individual design is done in loft style with warm shades. Only natural materials were used. All rooms are equipped with exclusive furniture and handmade lamps. Lighting solutions are able to set up different options of light intensity.</p></div></div></div><div><div class="columns is-vcentered"><div class="column is-6"><h3 class="title is-5 is-uppercase">Infrastructure</h3><p>It is possible to use the parking lot inside the yard. All rooms has air conditioning systems installed, wi-fi access to the Internet, plugged-in Internet TV module, activated security and video surveillance systems.</p></div><div class="column is-6"><figure class="image"><img src="./images/overview4.3da41b0d.jpg" alt="Loft Gazetnyi"></figure></div></div></div></div></div></div></section><!--Created by MI on 07.02.2018.--><section class="section is-info" id="place"><div class="container"><h2 class="title is-2 has-text-centered is-uppercase has-text-primary"><span class="has-angles">Location</span></h2><div class="columns is-vcentered is-centered"><div class="column is-3"><p>The office is located in the very center of Moscow. In 500 meters there is a Kremlin, Federation Council, State and Moscow Dumas, Ministries and other governmental institutions. In a walking distance there are premium class fitness clubs – World Class and Hard Candy. 10 minutes will take a ride to a business center – the Moscow City.</p><p class="has-text-centered-mobile"><a href="https://goo.gl/maps/LEKHL5bh4i82" target="_blank" rel="noopener">View on map<span class="icon"><i class="fas fa-map-marker-alt"></i></span></a></p></div><div class="column is-9 is-7-desktop"><figure class="image"><img src="./images/map.5be4afa1.png" alt=""></figure></div></div></div></section><!--Created by MI on 07.02.2018.--><section class="section" id="architecture"><div class="container"><h2 class="title is-2 has-text-centered is-uppercase has-text-primary"><span class="has-angles">Architecture</span></h2><div class="columns is-centered"><div class="column is-12 is-8-desktop"><p class="has-text-centered-tablet">Gazetnyi lane – is a historical center of the capital of Russia with remaining XVIIth century architecture. There was a printing house of the Moscow University, where the newspaper "Moskovskie Vedomosti" was printed, a building near by - Menshikov manor an architectural monument of the late XVIII century, an object of cultural heritage of Federal importance. The office is located in the adjacent building of the architectural ensemble and has architectural treatment in the style of strict classicism.</p></div></div></div></section></main><!--Created by MI on 07.02.2018.--><footer class="footer" id="contacts"><div class="container"><div class="title is-2 has-text-centered is-uppercase"><span class="has-angles has-text-info">Contacts</span></div><p class="subtitle is-5 has-text-centered is-uppercase"><a class="has-text-info" href="tel:+79772954448">+7 (977) 295-44-48</a></p><p class="subtitle is-5 has-text-centered is-uppercase"><a class="has-text-info" href="mailto:sales@gazetnyiloft.ru">sales@gazetnyiloft.ru</a></p><div class="title has-text-centered is-marginless is-2 has-text-centered is-uppercase js-modal-open is-hidden-tablet"><a class="has-angles has-text-info" href="javascript:void(0);">Позвоните мне</a></div><div class="has-text-centered"><img class="is-hidden-tablet" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAABDCAMAAABJLAxMAAAANlBMVEVMaXG+ppG+ppG+ppG+ppG+ppG+ppG+ppG+ppG+ppG+ppG+ppG+ppG+ppG+ppG+ppG+ppG+ppHDyLWAAAAAEXRSTlMAAd4IHl9EVJjMuBF47qgwh6aGvvcAAARFSURBVGje7ZrplqsgDIBRWZVF3v9lr4Q1OrbSzpl6z2n+WBbhM4QkMEM8knkg9xBEpRZyGyzJilByHyxGbihfrPewpuE2WGy0sTjo0RsbNuQ6gvD0HMUHsLRXsaijo9gUZqPPEOn5x2uNsejmUcUKddYr8BmcsdHPf+08MBb3fpteeRmwbO6j/PoZ28pYzBuSiO6HJW+ApegdseaFnGEZpZT8ENZETrHAVXwIi5xjKa21uB/WJ23rv8AS3ky38FsYy21BkCwmYNwDy6vgDga1/TDeu9tgBbHEmfDU5B5YLh4xOCELW7WDqB1KUThz5Cv/gSxC21nuV4sLISguVglxa0A1bt8F3h5SUxmCp275sOxigbZ1MYVnJuXGEtWPoaaJ6+gMHngnVGP3XYK/IUN4jkMdYgweO+2sMHmYZfOXItTxlmqt45hGO0uJ1m9j5fkSloMbD5KdJXz8AYudXI9wqJh+BcsiLNCQX6p34kes4ESDnlQZKUlUYrU3mQ5nMCYMeh0rMSSsyMKSW4xrvMcCpRg+kGltvqtoRx/dXOk2RXvMsq07CLTDr6lgMYRFyxDwayVHLFneAr2NRYvGY0z0Aq9YP15PldqEpRAW6CjkBdGC3A9YNvdIus2bkcbxxkNGa8rW6sCKxlCwWLaXOSPvseY6N2uNKe+E/WUcq0vbg7WiuZbUZyqD7bFUdQPCbMLbtdpt2mJytBsLFqSqANZoiDDLEywkod7mz6xCG5/Tg1WWbCQNhSyDXcQKUxpWEZDb4C9gWYQFFrrCthI9WMFvzC6qug0JYxNLurDCWjV2HPQ0urrdLmLp8jUogAvfrOtlrDlZdoPlcr0lPVgW1Kv2d1uNwSesOV1UuwdYMvmBBisGoIpygkVlElfTBwqqlicGvws+8hFWcj0NVk7Vs0GcYHGP6Gm0KrZTpUZh8zoWWLhEWLTxZ5exRNSKww41J0fdWKB2M7VYRKFU4BrWGj8EbJ7jsL4iJwJXO0H0Qyz4PoGwWL6ofWZbc23Ktq5QEmFxqnN5J8qo5xlhUfSNj4JPaSqeQbZJxD5f7cCKVqkOWLoLC3Q+JE0Xh8p2d+E9WDQbyTtY7JAg53ysGnwfVslc38Gy+9y3PQ28hiVexmKlaURYa5PquFexJtONNRJ0Com23fxdtgZ9NbyKlRO4p1hTjXL1YAJN4J+0C2LLqYwdThx9WO4a1jLXpdE1HPCsNrpLpNUhhe7DSsH5CRYdfZOza7oIU7Dm6hZcfpnWc1Y8feUMgidxT7BScH6CteFUk2mEJ2dqm3OZPfgMc4iJ1c+eYdEeLNJeQSRFti/kgPE+VrTdq1jLXC9GVG6qm3VNJvULWKIHiwwpI1MuNPK0C6Zj/3ex4sn3KtbWQ+hVh503ULrhLHSTst1CYUrPKiT2bqRsUlQY2hIaGLWUaVqsG8kX64v1q0Lr/0XJ+2AtCnmam1ANuyvXf97fomhGIBH4AAAAAElFTkSuQmCC" alt="Лофт Газетный" width="150"></div><p class="is-small has-text-centered has-text-white">©&nbsp;«ЛОФТ ГАЗЕТНЫЙ»,&nbsp;<script>var mdate = new Date();
+document.write(mdate.getFullYear());</script><!--Created by MI on 27.02.2018.--><div class="title is-marginless is-2 has-text-centered is-uppercase callback-button js-modal-open is-hidden-mobile"><a class="has-angles has-text-info" href="javascript:void(0);">Call me</a></div><div class="modal" id="callback"><div class="modal-background js-modal-close"></div><div class="modal-content box is-info"><p class="title has-text-centered"><span class="has-angles has-text-primary">We'll call you</span></p><form id="ajax-contact" action="/mailer.php" method="post"><div class="field"><label class="label">Your name</label><div class="control"><input class="input" id="name" type="text" name="name" placeholder="John Doe"></div></div><div class="field"><label class="label">Your phone</label><div class="control"><input class="input" id="phone" type="tel" name="phone" placeholder="Any format"></div></div><div class="field"><div class="control"><button class="button is-primary is-large is-fullwidth" id="submit-btn" type="submit">Call me</button></div></div><div class="field" style="display:none;"><div class="notification is-success is-error" id="form-messages"></div></div></form></div><button class="modal-close is-large js-modal-close"></button></div></p><img class="footer-logo is-hidden-mobile" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAABDCAMAAABJLAxMAAAANlBMVEVMaXG+ppG+ppG+ppG+ppG+ppG+ppG+ppG+ppG+ppG+ppG+ppG+ppG+ppG+ppG+ppG+ppG+ppHDyLWAAAAAEXRSTlMAAd4IHl9EVJjMuBF47qgwh6aGvvcAAARFSURBVGje7ZrplqsgDIBRWZVF3v9lr4Q1OrbSzpl6z2n+WBbhM4QkMEM8knkg9xBEpRZyGyzJilByHyxGbihfrPewpuE2WGy0sTjo0RsbNuQ6gvD0HMUHsLRXsaijo9gUZqPPEOn5x2uNsejmUcUKddYr8BmcsdHPf+08MBb3fpteeRmwbO6j/PoZ28pYzBuSiO6HJW+ApegdseaFnGEZpZT8ENZETrHAVXwIi5xjKa21uB/WJ23rv8AS3ky38FsYy21BkCwmYNwDy6vgDga1/TDeu9tgBbHEmfDU5B5YLh4xOCELW7WDqB1KUThz5Cv/gSxC21nuV4sLISguVglxa0A1bt8F3h5SUxmCp275sOxigbZ1MYVnJuXGEtWPoaaJ6+gMHngnVGP3XYK/IUN4jkMdYgweO+2sMHmYZfOXItTxlmqt45hGO0uJ1m9j5fkSloMbD5KdJXz8AYudXI9wqJh+BcsiLNCQX6p34kes4ESDnlQZKUlUYrU3mQ5nMCYMeh0rMSSsyMKSW4xrvMcCpRg+kGltvqtoRx/dXOk2RXvMsq07CLTDr6lgMYRFyxDwayVHLFneAr2NRYvGY0z0Aq9YP15PldqEpRAW6CjkBdGC3A9YNvdIus2bkcbxxkNGa8rW6sCKxlCwWLaXOSPvseY6N2uNKe+E/WUcq0vbg7WiuZbUZyqD7bFUdQPCbMLbtdpt2mJytBsLFqSqANZoiDDLEywkod7mz6xCG5/Tg1WWbCQNhSyDXcQKUxpWEZDb4C9gWYQFFrrCthI9WMFvzC6qug0JYxNLurDCWjV2HPQ0urrdLmLp8jUogAvfrOtlrDlZdoPlcr0lPVgW1Kv2d1uNwSesOV1UuwdYMvmBBisGoIpygkVlElfTBwqqlicGvws+8hFWcj0NVk7Vs0GcYHGP6Gm0KrZTpUZh8zoWWLhEWLTxZ5exRNSKww41J0fdWKB2M7VYRKFU4BrWGj8EbJ7jsL4iJwJXO0H0Qyz4PoGwWL6ofWZbc23Ktq5QEmFxqnN5J8qo5xlhUfSNj4JPaSqeQbZJxD5f7cCKVqkOWLoLC3Q+JE0Xh8p2d+E9WDQbyTtY7JAg53ysGnwfVslc38Gy+9y3PQ28hiVexmKlaURYa5PquFexJtONNRJ0Com23fxdtgZ9NbyKlRO4p1hTjXL1YAJN4J+0C2LLqYwdThx9WO4a1jLXpdE1HPCsNrpLpNUhhe7DSsH5CRYdfZOza7oIU7Dm6hZcfpnWc1Y8feUMgidxT7BScH6CteFUk2mEJ2dqm3OZPfgMc4iJ1c+eYdEeLNJeQSRFti/kgPE+VrTdq1jLXC9GVG6qm3VNJvULWKIHiwwpI1MuNPK0C6Zj/3ex4sn3KtbWQ+hVh503ULrhLHSTst1CYUrPKiT2bqRsUlQY2hIaGLWUaVqsG8kX64v1q0Lr/0XJ+2AtCnmam1ANuyvXf97fomhGIBH4AAAAAElFTkSuQmCC" alt="Лофт Газетный" width="150"></div></footer><script><!-- Yandex.Metrika counter -->
+
+(function (d, w, c) {
+    (w[c] = w[c] || []).push(function () {
+        try {
+            w.yaCounter48138485 = new Ya.Metrika({
+                id: 48138485,
+                clickmap: true,
+                trackLinks: true,
+                accurateTrackBounce: true,
+                webvisor: true
+            });
+        } catch (e) {
+        }
+    });
+
+    var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () {
+            n.parentNode.insertBefore(s, n);
+        };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+    } else {
+        f();
+    }
+})
+(document, window, "yandex_metrika_callbacks"
+)
+;
+</script><noscript></noscript><div><img src="https://mc.yandex.ru/watch/48138485" style="position:absolute; left:-9999px;" alt=""></div><script type="text/javascript" src="./scripts/manifest.dea7ebc5.js"></script><script type="text/javascript" src="./scripts/vendor.7453e6c3.js"></script><script type="text/javascript" src="./scripts/main.0c84d450.js"></script></body></html>
